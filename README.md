@@ -72,6 +72,11 @@ Add-Migration InitialMigration
 Update-Database
 ```
 ### 4. Run the app
+
+## Sample Output
+
+<img width="749" height="377" alt="image" src="https://github.com/user-attachments/assets/d7a0b3f3-7a80-4ed4-a879-38473f2ec7e1" />
+
   
   
 
