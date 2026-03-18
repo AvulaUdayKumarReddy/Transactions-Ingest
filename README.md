@@ -23,7 +23,7 @@ This application also tracks changes to record and stores in Audit table and thi
 
 ## Database
 Transcations DB
-*Tables : Transactions, Audit
+* Tables : Transactions, Audit
 
 ## Design Decisions
 
@@ -48,6 +48,33 @@ A seperate table is presnet to track changes to fields in Transaction table, use
 * Only last 4 digits of Card number is stored
 * Date used in json file may not be applicable to some test cases while evaluating
 * Time is in UTC format.
+
+## Set up Instructions:
+
+### 1. clone the repository
+```bash
+git clone https://github.com/AvulaUdayKumarReddy/Transactions-Ingest.git
+cd Transaction-Ingest.git
+```
+### 2. Install dependencies
+
+* Microsoft.EntityFrameworkCore.Sqlite
+* Microsoft.EntityFrameworkCore.Tools
+* Microsoft.EntityFrameworkCore.Design
+* Microsoft.Extensions.Configuration
+* Microsoft.Extensions.Configuration.Json
+* Microsoft.Extensions.Hosting
+
+### 3. Apply migrations
+
+```bash
+Add-Migration InitialMigration
+Update-Database
+```
+### 4. Run the app
+  
+  
+
   
 
 
